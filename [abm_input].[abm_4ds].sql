@@ -2,11 +2,11 @@ USE [popsyn_3_0]
 GO
 
 /****** Object:  UserDefinedFunction [abm_input].[abm_4ds]    Script Date: 4/23/2019 8:57:29 PM ******/
-SET ANSI_NULLS ON
-GO
+--SET ANSI_NULLS ON
+--GO
 
-SET QUOTED_IDENTIFIER ON
-GO
+--SET QUOTED_IDENTIFIER ON
+--GO
 
 
 -- Household data

@@ -1,4 +1,4 @@
-# Python Service Bureau Automated Mode Choice Documented (IN PROGRESS)
+# Python Service Bureau Automated Mode Choice Documentation
 
 **Required Software**: SQL Server Management Studio (SMSS), Anaconda
 

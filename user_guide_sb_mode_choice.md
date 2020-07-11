@@ -20,9 +20,9 @@
 
 5. Create the Python environment by typing the following: ```conda env create -f environment.yml``` (Ignore the warning below because I have already created the environment on a previous test).
 
-![](https://user-images.githubusercontent.com/67477664/87187733-84fec100-c2a2-11ea-9b30-3968fcf1b2ea.png)
-
 6. Activate the Python environment by typing ```conda activate sb```
+
+![](https://user-images.githubusercontent.com/67477664/87187733-84fec100-c2a2-11ea-9b30-3968fcf1b2ea.png)
 
 7. Run the Python process by typing ```main.py```
 

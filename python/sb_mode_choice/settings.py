@@ -1,14 +1,13 @@
 
-# set path to Report Excel workbook template
-# template_path = "./resources/template/Mode_Choice_Template.xlsx"
-template_path = "T:/ABM/SB/Template/Analysis/ModeChoice/Mode_Choice_Template.xlsx"
+# set path to template for Mode Choice Report excel workbook
+template_path = "../../resources/sb_mode_choice/templates/Mode_Choice_Template_python.xlsx"
+# template_path = "T:/ABM/SB/Template/Analysis/ModeChoice/Mode_Choice_Template.xlsx"
 
-# set path to write completed
-# Excel workbook
+# set path to write completed Report
 report_write_path = "./Mode_Choice"
 
 # set protection option and password
-template_protect = False #True
+template_protect = False  # True
 template_password = ""
 
 # set SQL Server connection attributes
@@ -27,6 +26,7 @@ adhoc_queries = [
      "sheet": "Input",
      "row": 2}
 ]
+
 
 # initialize dictionary to hold report queries to run
 # and the sheets in the Excel template to write result sets to
@@ -119,3 +119,4 @@ report_queries = [
      "args": "@scenario_id=?",
      "sheet": "VehicleTripLength2 - Book 3_6"},
 ]
+

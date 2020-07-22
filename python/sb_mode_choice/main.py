@@ -33,35 +33,6 @@ file_suffix = input("Enter report file name suffix: ")  # filename suffix
 # write user inputs to the report Input sheet
 reportInput = template['Input']
 reportInput['C7'] = scenario_id
-reportInput['C5'] = project_name
-reportInput['C8'] = scenario_header
-reportInput['C9'] = geo
-
-# add mgra list
-# move header before deleting columns
-reportInput.move_range("E2:F2", rows=0, cols=12)
-# delete columns with mgra list
-reportInput.delete_cols(5, 5)
-# move header back
-reportInput.move_range("L2:M2", rows=0, cols=-7)
-# get MGRA list for ABM scenario
-mgra_list_sql = 'SELECT [id] as [order], [value] as mgra from [popsyn_3_0].[sbreport].[mgra] where [user_id] = system_user order by id'
-
-mgra_result = pd.read_sql_query(
-    sql=mgra_list_sql,
-    con=conn
-)
-
-# write mgra list to specified Excel template sheet
-mgra_result.to_excel(
-    excel_writer=templateWriter,
-    sheet_name="Input",
-    na_rep="NULL",
-    header=True,
-    index=False,
-    startrow=2,
-    startcol=4,
-    engine="openpyxl")
 
 # start execution timer
 start = time.time()

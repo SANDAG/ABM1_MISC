@@ -15,6 +15,19 @@ template_password = ""
 server = "sql2014a8"
 database = "popsyn_3_0"
 
+
+# initialize dictionary to hold ad-hoc queries to run
+# and the sheet+row in the Excel template to write result sets to
+adhoc_queries = [
+    # mgra list
+    {"query": ("SELECT [id] as [order], [value] as [mgra] FROM "
+               "[popsyn_3_0].[sbreport].[mgra] WHERE [user_id] = system_user "
+               "ORDER BY [id]"),
+     "column": 4,
+     "sheet": "Input",
+     "row": 2}
+]
+
 # initialize dictionary to hold report queries to run
 # and the sheets in the Excel template to write result sets to
 report_queries = [

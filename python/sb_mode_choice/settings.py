@@ -33,7 +33,7 @@ adhoc_queries = [
 report_queries = [
     # --===========book1==============
     # -- Book1_1  "LandUse":
-    {"sp": "[sbreport].[lu_input_summary_mgra]",
+    {"sp": "[sbreport].[lu_input_summary_mgra_orig]", # from lu_mgra_input instead of lu_person
      "args": "@scenario_id=?",
      "sheet": "LandUse - Book 1_1"},
     # -- Book1_2  "Residents":
